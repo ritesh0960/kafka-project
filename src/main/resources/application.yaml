@@ -1,21 +1,22 @@
 server:
   port: 8181
-spring:
-  kafka:
-    producer:
-      bootstrap-servers:
-        - localhost:9092
-#      key-serializer: org.apache.kafka.common.serialization.Serializer.StringSerializer
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-    consumer:
-      bootstrap-servers:
-        - localhost:9092
-      group-id: practiceGroup
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring:
-          json:
-            trusted:
-              packages: com.personal.Kafka_project.Entity
+#we have commented below configurations because we have configured everything programatically in Configuration file
+#spring:
+#  kafka:
+#    producer:
+#      bootstrap-servers:
+#        - localhost:9092
+##      key-serializer: org.apache.kafka.common.serialization.Serializer.StringSerializer
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#    consumer:
+#      bootstrap-servers:
+#        - localhost:9092
+#      group-id: practiceGroup
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+#      properties:
+#        spring:
+#          json:
+#            trusted:
+#              packages: com.personal.Kafka_project.Entity
